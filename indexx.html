@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clase con</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Realizando cambios en el index</h1>
+
+<body class="bg-black text-zinc-100 font-sans antialiased">
+
+    <header class="border-b-4 border-white p-6 mb-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-end">
+            <div>
+                <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none uppercase">Music<span
+                        class="text-red-600">Feed</span></h1>
+                <p class="font-mono text-sm mt-2 tracking-widest text-zinc-400">SIN FILTROS // SOLO BANDAS TOP // 2026
+                </p>
+            </div>
+            <div class="hidden md:block border-2 border-white px-4 py-2 font-bold uppercase tracking-tighter">
+                Edición Diaria
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+            <article class="md:col-span-8 group relative overflow-hidden bg-zinc-900 aspect-video md:aspect-auto">
+                <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&q=80&w=1200"
+                    class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="relative h-full flex flex-col justify-end p-8">
+                    <span class="bg-white text-black font-black px-3 py-1 text-xs uppercase w-fit mb-4">Titular del
+                        día</span>
+                    <h2
+                        class="text-4xl md:text-6xl font-black uppercase italic leading-none group-hover:text-red-500 transition">
+                        Foo Fighters anuncia concierto secreto en el desierto
+                    </h2>
+                    <p class="mt-4 text-zinc-300 max-w-xl font-medium">La banda de Dave Grohl enviará coordenadas por
+                        radio 24 horas antes del show.</p>
+                </div>
+            </article>
+
+            <div class="md:col-span-4 flex flex-col gap-6">
+                <div class="bg-red-600 p-6 text-black">
+                    <h3 class="font-black text-2xl uppercase italic">Flash Informativo</h3>
+                    <ul class="mt-4 space-y-4 font-bold border-t border-black/20 pt-4">
+                        <li class="flex gap-2"><span>•</span> Pearl Jam cancela gira asiática por motivos logísticos.
+                        </li>
+                        <li class="flex gap-2"><span>•</span> Green Day lanza vinilo edición limitada color "Chernobyl".
+                        </li>
+                        <li class="flex gap-2"><span>•</span> Slipknot estrena nueva máscara para el Knotfest.</li>
+                    </ul>
+                </div>
+
+                <article class="bg-zinc-900 border-l-8 border-white p-6">
+                    <span class="text-red-500 font-bold text-xs uppercase tracking-widest italic">Opinión</span>
+                    <h4 class="text-xl font-black mt-2 leading-tight uppercase">"El Rock no ha muerto, solo está
+                        descansando"</h4>
+                    <p class="text-zinc-500 text-sm mt-2 font-mono">— Por Mick Jagger</p>
+                </article>
+            </div>
+
+            <article class="md:col-span-4 border border-zinc-800 p-4 hover:bg-zinc-900 transition cursor-default">
+                <img src="https://www.nj.com/entertainment/2025/08/system-of-a-down-nj-concert-review-power-and-chaos-define-metal-vets-first-jersey-show-in-13-years.html"
+                    class="w-full h-48 object-cover mb-4 grayscale hover:grayscale-0 transition duration-500">
+                <h3 class="text-xl font-bold uppercase tracking-tight">System of a Down vuelve al estudio</h3>
+                <p class="text-zinc-500 text-sm mt-2 leading-relaxed">Tras 20 años de espera, Serj Tankian y compañía
+                    confirman que tienen 12 pistas nuevas listas para mezcla.</p>
+            </article>
+
+            <article class="md:col-span-4 border border-zinc-800 p-4 hover:bg-zinc-900 transition cursor-default">
+                <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&q=80&w=600"
+                    class="w-full h-48 object-cover mb-4 grayscale hover:grayscale-0 transition duration-500">
+                <h3 class="text-xl font-bold uppercase tracking-tight">Muse y su despliegue tecnológico</h3>
+                <p class="text-zinc-500 text-sm mt-2 leading-relaxed">Matt Bellamy planea usar hologramas controlados
+                    por ondas cerebrales en su próximo tour de estadios.</p>
+            </article>
+
+            <article class="md:col-span-4 border border-zinc-800 p-4 hover:bg-zinc-900 transition cursor-default">
+                <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&q=80&w=600"
+                    class="w-full h-48 object-cover mb-4 grayscale hover:grayscale-0 transition duration-500">
+                <h3 class="text-xl font-bold uppercase tracking-tight">Queen + Adam Lambert dicen adiós</h3>
+                <p class="text-zinc-500 text-sm mt-2 leading-relaxed">La gira final "Long Live The King" recorrerá 40
+                    países durante todo el año 2026.</p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bg-white text-black py-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="text-3xl font-black italic uppercase tracking-tighter">MusicFeed</span>
+            <p class="text-[10px] font-mono font-bold uppercase text-center md:text-left">
+                Hecho para fans de la música real. <br>
+                Propiedad de la comunidad. Sin anuncios molestos.
+            </p>
+            <div class="flex gap-4 font-bold text-sm underline decoration-2">
+                <a href="#">X (Twitter)</a>
+                <a href="#">Instagram</a>
+                <a href="#">RSS</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
